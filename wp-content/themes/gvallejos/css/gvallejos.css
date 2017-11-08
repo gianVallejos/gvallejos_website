@@ -1,0 +1,627 @@
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+a{
+    background-color: #000;
+}
+
+                            /* HEADER */
+.header{
+    position: fixed;
+    padding: 35px 0px 20px 0px;
+    width: 100%;
+    background-color: #FFF;
+    z-index: 99;
+    transition: padding 0.6s ease;
+}
+
+.shrink{
+    padding: 19px 0px 3px 0px;
+}
+
+.header-container{
+    position: relative;
+}
+
+.logotipo{
+    display: inline-block;
+}
+
+.menu{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding-top: 6px;
+}
+
+.menu ul{
+    padding: 0px;
+}
+.menu li{
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 35px;
+}
+
+.menu li a{
+    font-family: 'Raleway', sans-serif;
+    color: #28657f;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.menu li a:hover{
+    text-decoration: none;
+    color: #8bba4b;
+}
+
+                            /*  PORTADA */
+.portada{
+    position: relative;
+    text-align: center;
+    /*min-height: 100vh;*/
+    padding: 286px 0px 280px 0px;
+}
+
+.portada:before{
+  content: ' ';
+  /*display: block;*/
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.15;
+  background-image: url('../images/portada-img.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.portada .titulo, .portafolio .titulo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #28657f;
+}
+
+.portada .descripcion{
+    padding: 27px 92px 47px 92px;
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+}
+
+.portada .website{
+    padding: 90px 0px 0px 0px;
+}
+
+.portada .website a{
+    font-family: 'Raleway', sans-serif;
+    color: #8bba4b;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.portada .website a:hover{
+    color: #28657f;
+    text-decoration: none;
+}
+
+.contenedor-arrow{
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    bottom: 45px;
+}
+
+a.arrow{
+    color: #000;
+    text-decoration: bold;
+}
+
+a.arrow:hover{
+    text-decoration: none;
+    color: #000;
+}
+
+                        /* PORTAFOLIO */
+.portafolio{
+    text-align: center;
+    /*min-height: 100vh;*/
+    margin-top: 30px;
+    padding-top: 52px;
+    padding-bottom: 105px;
+}
+
+.portafolio .titulo{
+    font-size: 42px;
+}
+
+.portafolio .descripcion{
+    padding-top: 0px;
+    font-family: 'Raleway', sans-serif;
+    color: #8bba4b;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menu-portafolio{
+    padding-top: 42px;
+}
+
+.menu-portafolio ul{
+    list-style-type: none;
+}
+
+.menu-portafolio li{
+    display: inline-block;
+    padding-left: 35px;
+    font-size: 17px;
+}
+
+.menu-portafolio li a.active{
+    color: #8bba4b;
+    border-bottom: 4px solid #8bba4b;
+}
+
+.menu-portafolio li a{
+    color: #28657f;
+    font-weight: bold;
+}
+
+.menu-portafolio li a:hover{
+    text-decoration: none;
+    color: #8bba4b;
+}
+
+.imagen-list{
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+.imagen-list li{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.imagen-list li:first{
+    padding: 0px;
+}
+
+.imagen-list li img{
+    margin: 25px 0px 0px 21px;
+}
+
+.image-content{
+    position: absolute;
+    top: 115px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin-left: 10px;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.imagen-list > li:hover .image-content{
+    opacity: 1;
+}
+
+.image-content:before{
+    position: absolute;
+    top: -90px;
+    left: 11px;
+    width: 315px;
+    height: 215px;
+    content: ' ';
+    background-color: #073a4f;
+    opacity: 0.9;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.image-content h4{
+    position: relative;
+    color: #FFF;
+    font-weight: bold;
+    z-index: 2;
+    margin: 0;
+    margin-top: -5px;
+}
+
+.image-content span{
+    position: relative;
+    color: #FFF;
+    z-index: 2;
+}
+                      /* TESTIMONIOS */
+.testimonios{
+    background-image: url('../images/background-testimonios.jpg');
+    height: 462px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: #FFF;
+    padding-top: 56px;
+}
+
+.foto-perfil img{
+    display: inline-block;
+    width: 119px;
+    height: 119px;
+    border: 6px solid white;
+    border-radius: 50%;
+    background-color: #c6c6c6;
+    line-height: 105px;
+    vertical-align: middle;
+}
+
+.testimonios .texto{
+    padding: 29px 116px 0px 116px;
+    font-size: 24px;
+}
+
+.testimonios .autor{
+    display: inline-block;
+    padding: 29px 40px 0px 40px;
+    width: 410px;
+    text-align: center;
+    font-size: 16px;
+}
+
+                          /* CLIENTES */
+.clientes{
+    background-color: #f3f6f7;
+    text-align: center;
+    padding: 110px 0px 136px 0px;
+}
+
+.clientes .titulo{
+    font-family: 'Poppins', sans-serif;
+    color: #28657f;
+}
+
+.clientes .descripcion{
+    padding-top: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #8bba4b;
+    font-weight: bold;
+}
+
+.clientes-lista{
+    list-style-type: none;
+    padding-top: 53px;
+}
+
+.clientes-lista li{
+    display: inline-block;
+    padding-left: 29px;
+    padding-top: 10px;
+}
+
+.clientes-lista li:first-of-type{
+    padding-left: 0px;
+}
+
+.clientes-lista img{
+    width: auto;
+    height: 53px;
+}
+
+                        /*  ACERCA DE */
+.acerca-de{
+    background-image: url('../images/background-acerca-de.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /*background-size: cover;*/
+    background-position: center;
+    background-color: #000;
+    min-height: 536px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: #FFF;
+    padding-top: 116px;
+}
+
+.acerca-de .nombre{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.acerca-de .texto{
+    display: inline-block;
+    padding: 23px 106px 0px 106px;
+    font-size: 18px;
+
+}
+
+.acerca-de .website{
+    padding-top: 29px;
+}
+
+.acerca-de .website a{
+    color: #FFF;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+.acerca-de .website a:hover{
+    color: #8bba4b;
+    text-decoration: none;
+}
+
+                    /* CONTACTANOS */
+.contactanos{
+    text-align: center;
+    padding-top: 74px;
+    padding-bottom: 103px;
+}
+
+.contactanos .titulo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #28657f;
+    font-size: 42px;
+}
+
+.contactanos .descripcion{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    padding: 12px 254px 0px 254px;
+}
+
+.contactanos .contenido{
+    padding-top: 56px;
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contactanos a{
+    color: #000;
+}
+
+.contactanos a.mail{
+    color: #83d4f6;
+}
+
+p.contenido-titulo{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #8bba4b;
+    font-size: 19px;
+}
+
+p.contenido-titulo:last-of-type{
+    margin-top: 84px;
+}
+
+p.titulo-contacto{
+    font-weight: bold;
+    margin: 0px;
+    margin-top: 12px;
+    font-size: 17px;
+}
+
+ul.redes-sociales{
+    margin: 0;
+    padding: 0;
+}
+.redes-sociales li{
+    display: inline-block;
+}
+
+.redes-sociales li a{
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    border: 2px solid #565656;
+    border-radius: 50%;
+    margin-right: 7px;
+    line-height: 35px;
+    padding: 0px 0px 0px 7px;
+}
+
+.redes-sociales li a:hover{
+    text-decoration: none;
+    background-color: #565656;
+}
+
+.redes-sociales li a i:before{
+    font-weight: bold;
+    margin-left: 0px;
+    color: #565656;
+}
+
+.redes-sociales li a:hover i:before{
+    color: #FFF;
+    font-weight: normal;
+}
+
+                                /*  FORM CONTACTOS   */
+.form-contacto{
+    background-color: rgb(39, 74, 91);
+    text-align: center;
+    padding-top: 83px;
+    padding-bottom: 119px;
+    color: #FFF;
+}
+
+.form-contacto .titulo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.form-contacto .descripcion{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    padding: 24px 280px 0px 280px;
+}
+
+.form-contacto .formulario{
+    margin-top: 74px;
+}
+
+input.form-class:first-of-type{
+    margin-left: 0px;
+}
+
+.form-class{
+    background-color: #274a5b;
+    border: 1px solid white;
+    padding-left: 15px;
+    color: #e1e0e0;
+}
+
+input.form-class{
+    width: 483px;
+    height: 42px;
+    margin-left: 27px;
+}
+
+input.form-class:focus{
+    background-color: #274a5b;
+    border: 1px solid #878787;
+    outline: none;
+}
+
+textarea.form-class{
+    width: 998px;
+    height: 164px;
+    margin-top: 21px;
+    margin-bottom: 28px;
+    padding-top: 9px;
+}
+
+textarea.form-class:focus{
+    background-color: #274a5b;
+    border: 1px solid #878787;
+    outline: none;
+}
+
+.btn-form{
+    background-color: #274a5b;
+    border: 1px solid white;
+    width: 140px;
+    height: 46px;
+    color: #FFF;
+}
+
+.btn-form:hover{
+    color: #ccc;
+}
+
+                                      /* FOOTER */
+.footer{
+    background-color: #112b37;
+    color: #FFF;
+    padding-top: 38px;
+    padding-bottom: 17px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.menu-footer ul{
+    list-style-type: none;
+    padding: 0px;
+}
+
+.menu-footer li:first-of-type{
+    padding-left: 0px;
+}
+
+.menu-footer li{
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.menu-footer li a{
+    font-size: 10px;
+    color: #FFF;
+
+}
+
+footer p{
+    margin: 0px;
+}
+
+p.mail, p.celular{
+    font-size: 12px;
+}
+
+p.mail span, p.celular span{
+    display: inline-block;
+    width: 124px;
+    color: #83d4f6;
+}
+
+p.celular a, p.mail a{
+    color: #FFF;
+}
+
+p.celular a:hover, p.mail a:hover{
+    text-decoration: none;
+    color: #83d4f6;
+}
+.redes-sociales-footer{
+    list-style-type: none;
+    padding: 0px;
+}
+
+.redes-sociales-footer li:first-of-type{
+    margin-left: 0px;
+}
+
+.redes-sociales-footer li{
+    display: inline-block;
+}
+
+.redes-sociales-footer li a{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border: 1.5px solid rgb(39, 74, 91);
+    margin-left: 7px;
+    line-height: 32px;
+}
+
+.redes-sociales-footer li a i:before{
+    font-weight: bold;
+    color: rgb(39, 74, 91);
+    margin-left: 0px;
+}
+
+.redes-sociales-footer li a:hover{
+    text-decoration: none;
+    border-color: #CCC;
+}
+
+.redes-sociales-footer li a:hover i:before{
+    color: #CCC;
+    font-weight: normal;
+}
+
+p.direccion span{
+    color: #83d4f6;
+}
+
+p.direccion{
+    color: #FFF;
+    font-size: 12px;
+}
+
+p.direccion > br{
+    color: #FFF;
+}
+
+p.copy{
+    padding-top: 12px;
+    color: #83d4f6;
+    font-size: 12px;
+}
